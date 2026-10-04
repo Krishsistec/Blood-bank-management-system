@@ -1,0 +1,34 @@
+HOW TO RUN HEMOLINK BLOOD BANK MANAGEMENT SYSTEM
+===================================================
+
+OPTION 1: Using Batch Files (Recommended)
+-----------------------------------------
+1. Double-click on "compile.bat" to compile the application
+2. Double-click on "run.bat" to run the application
+
+OPTION 2: Command Line
+---------------------
+1. Open Command Prompt or PowerShell
+2. Navigate to project directory:
+   cd "c:\Users\Dell\Desktop\blood bank"
+
+3. Compile the application:
+   javac src\*.java src\view\*.java
+
+4. Run the application:
+   java -cp src Main
+
+OPTION 3: One-liner Command
+---------------------------
+Copy and paste this single command in Command Prompt:
+cd "c:\Users\Dell\Desktop\blood bank" && javac src\*.java src\view\*.java && java -cp src Main
+
+LOGIN CREDENTIALS:
+- Username: admin
+- Password: admin123
+
+REQUIREMENTS:
+- Java Development Kit (JDK) 8 or higher must be installed
+- Java must be in your system PATH
+
+If Java is not installed, download from: https://www.oracle.com/java/technologies/downloads/

@@ -1,0 +1,17 @@
+RUNNING WITH JRE ONLY (NO JDK REQUIRED)
+========================================
+
+If you have JRE (Java Runtime Environment) but not JDK:
+
+1. Download JRE from: https://www.java.com/en/download/
+2. Install JRE (smaller than JDK)
+3. Contact me to provide pre-compiled .class files
+4. Place .class files in correct folders
+5. Run with: java -cp src Main
+
+DIFFERENCE:
+- JDK = Development Kit (can compile + run)
+- JRE = Runtime Environment (can only run, not compile)
+
+RECOMMENDATION:
+Install JDK - it's the standard way to run Java projects.

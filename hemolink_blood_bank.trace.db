@@ -1,0 +1,147 @@
+2026-07-11 14:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]IGNORE INTO users (username, password, role) VALUES ('admin', 'admin123', 'admin')"; expected "INTO"; SQL statement:
+INSERT IGNORE INTO users (username, password, role) VALUES ('admin', 'admin123', 'admin') [42001-214]
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO users (username, password, role) VALUES ('admin', 'admin123', 'admin') [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:123)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('A+', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('A-', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('B+', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('B-', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('O+', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('O-', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('AB+', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
+2026-07-11 14:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" contains null values; SQL statement:
+MERGE INTO blood_stock (blood_type, units_available) VALUES ('AB-', 50) [90081-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.dml.Merge.merge(Merge.java:171)
+	at org.h2.command.dml.Merge.update(Merge.java:109)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at util.DatabaseConnection.initializeDatabase(DatabaseConnection.java:133)
+	at Main.main(Main.java:7)
